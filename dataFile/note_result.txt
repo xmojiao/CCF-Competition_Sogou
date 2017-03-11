@@ -1,0 +1,41 @@
+第0次 result.csv
+education feature number=20000 right:0.531
+gender feature number=20000 right:0.806
+age feature number=20000 right:0.541
+（0.531+0.806+0.541）/3=0.626
+actual score=0.647
+差值=+0.021
+
+第一次（ensemble投票）result_1.csv
+education feature number= 21250 right:0.532
+gender feature number= 15000 right:0.814
+age feature number= 10000  right:0.558
+(0.532+0.814+0.558)/3=0.6347
+actual score=0.652
+差值=+0.0173
+
+第二次（四个算法单独作用，取最好的）
+education  feature number= 20000  SVM  0.5385
+gender  feature number= 15000 SVM  0.8075
+age feature number= 10000 MaxEnt  0.5535
+(0.5535+0.8075+0.5385)/3=0.6332
+actual score=0.65188
+差值=+0.01868
+
+第三次（未使用交叉验证），使用真是数据监测
+education feature number= 21250 ensemble right:  0.5335
+gender feature number= 15000  ensemble right:  0.814
+age feature number= 10000  ensemble right:  0.558
+（0.5335+0.814+0.558）/3=0.6352
+actual score=0.65235
+差值=+0.0172
+
+第四次（单独训练各分类器）
+education feature number= 21250 ensemble right:  0.5415
+gender feature number= 15000  ensemble right:  0.815
+age feature number= 10000  ensemble right:  0.566
+（0.5415+0.815+0.566）/3=0.6408
+actual score=0.65742
+差值=+0.01662
+
+
